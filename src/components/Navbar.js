@@ -64,7 +64,7 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="nav-logo">
-          <Image src={Logo} />
+          <Image src={Logo} alt="logo" />
         </div>
         <div className="nav-socials">
           <div className="affiliate ">

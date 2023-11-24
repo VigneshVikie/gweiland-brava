@@ -15,56 +15,56 @@ export default function MarqueeCards() {
     <div className="marquee-container">
       <Marquee>
       <div className="marquee-cards">
-        <Image src={MarqueeImg1}></Image>
+        <Image src={MarqueeImg1} alt="MarqueeImg1"/>
         <div className="marquee-txt">
           <h1>$hosky</h1>
           <Link href='/'>shop now</Link>
         </div>
       </div>
       <div className="marquee-cards" style={{backgroundColor:'#a252d0'}}>
-        <Image src={MarqueeImg2}></Image>
+        <Image src={MarqueeImg2} alt="MarqueeImg2"/>
         <div className="marquee-txt">
           <h1>danketsu</h1>
           <Link href='/'>shop now</Link>
         </div>
       </div>
       <div className="marquee-cards" style={{backgroundColor:'#091f2c'}}>
-        <Image src={MarqueeImg3}></Image>
+        <Image src={MarqueeImg3} alt="MarqueeImg3"/>
         <div className="marquee-txt">
           <h1>bitfins</h1>
           <Link href='/'>shop now</Link>
         </div>
       </div>
       <div className="marquee-cards" style={{backgroundColor:'#000'}}>
-        <Image src={MarqueeImg4}></Image>
+        <Image src={MarqueeImg4} alt="MarqueeImg4"/>
         <div className="marquee-txt">
           <h1>future fest</h1>
           <Link href='/'>shop now</Link>
         </div>
       </div>
       <div className="marquee-cards" style={{backgroundColor:'#000'}}>
-        <Image src={MarqueeImg5}></Image>
+        <Image src={MarqueeImg5} alt="MarqueeImg5"/>
         <div className="marquee-txt">
           <h1>vudu brigada</h1>
           <Link href='/'>shop now</Link>
         </div>
       </div>
       <div className="marquee-cards" style={{backgroundColor:'#000'}}>
-        <Image src={MarqueeImg6}></Image>
+        <Image src={MarqueeImg6} alt="MarqueeImg6"/>
         <div className="marquee-txt">
           <h1>pendulum</h1>
           <Link href='/'>shop now</Link>
         </div>
       </div>
       <div className="marquee-cards" style={{backgroundColor:'#ff8a8a'}}>
-        <Image src={MarqueeImg7}></Image>
+        <Image src={MarqueeImg7}alt="MarqueeImg7"/>
         <div className="marquee-txt">
           <h1>cryptoraggies</h1>
           <Link href='/'>shop now</Link>
         </div>
       </div>
       <div className="marquee-cards" style={{backgroundColor:'#455a44'}}>
-        <Image src={MarqueeImg8}></Image>
+        <Image src={MarqueeImg8} alt="MarqueeImg8"/>
         <div className="marquee-txt">
           <h1>cardano<br/>stonerz club</h1>
           <Link href='/'>shop now</Link>
