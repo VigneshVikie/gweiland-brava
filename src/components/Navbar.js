@@ -45,11 +45,30 @@ export default function Navbar() {
               <Link className="hover-underline-animation" href="/">
                 brands <RiArrowDropDownLine />
               </Link>
+              <ul class="dropdown">
+                <li><Link className="hover-underline-animation" href='/'>all brands</Link></li>
+                <li><Link className="hover-underline-animation" href='/'>$hosky</Link></li>
+                <li><Link className="hover-underline-animation" href='/'>bitfins</Link></li>
+                <li><Link className="hover-underline-animation" href='/'>cardano stonerz club</Link></li>
+                <li><Link className="hover-underline-animation" href='/'>cryptoraggies</Link></li>
+                <li><Link className="hover-underline-animation" href='/'>danketsu</Link></li>
+                <li><Link className="hover-underline-animation" href='/'>future fest</Link></li>
+                <li><Link className="hover-underline-animation" href='/'>pendulum</Link></li>
+                <li><Link className="hover-underline-animation" href='/'>vudu brigada</Link></li>
+              </ul>
             </li>
             <li>
               <Link className="hover-underline-animation" href="/">
                 shop <RiArrowDropDownLine />
               </Link>
+              <ul class="shop-dropdown">
+                <li><Link className="hover-underline-animation" href='/'>unisex hoodies</Link></li>
+                <li><Link className="hover-underline-animation" href='/'>unisex zip hoodies</Link></li>
+                <li><Link className="hover-underline-animation" href='/'>unisex sweatshirts</Link></li>
+                <li><Link className="hover-underline-animation" href='/'>unisex tees</Link></li>
+                <li><Link className="hover-underline-animation" href='/'>women's tanks</Link></li>
+                <li><Link className="hover-underline-animation" href='/'>unisex tanks</Link></li>
+              </ul>
             </li>
             <li>
               <Link className="hover-underline-animation" href="/">

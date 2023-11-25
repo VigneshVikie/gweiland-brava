@@ -45,21 +45,59 @@
 
   .nav-links {
     width: 40%;
+
     > ul {
       display: flex;
       align-items: center;
       font-size: 16px;
       list-style: none;
+
       > li {
+        display: block;
+        transition-duration: 0.5s;
         padding: 0 15px;
         font-weight: 700;
+
+        .dropdown,.shop-dropdown {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          transition: all 0.5s ease;
+          margin-left: 50px;
+          padding: 20px;
+          left: 0;
+          display: none;
+          height: 300px;
+
+          > li {
+            list-style: none;
+            padding: 4px;
+          }
+        }
+        .shop-dropdown{
+          margin-left: 200px;
+          height: 200px;
+        }
+
         > a {
           display: flex;
           align-items: center;
           text-align: center;
         }
       }
+      
     }
+    > ul li:hover > ul,
+    > ul li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
+      background-color: #28282a;
+    }
+  }
+  > ul li ul li {
+    clear: both;
+    width: 100%;
   }
 
   .nav-logo {
@@ -199,6 +237,67 @@
 
 #checkbox:checked + .toggle #bar3 {
   display: none;
+}
+
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #212122;
+  z-index: 2;
+  color: #fff;
+  padding: 0 50px 44px 50px;
+  font-family: "madeTmmy", Verdana;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 44px;
+
+  .mob-links {
+    padding-top: 130px;
+    > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      > li {
+        list-style: none;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        padding-top: 10px;
+      }
+    }
+  }
+  .mob-socials {
+    > ul {
+      display: flex;
+      gap: 20px;
+
+      > li {
+        list-style: none;
+        font-size: 20px;
+        padding-top: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+  .mob-login {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    font-size: 40px;
+
+    .login {
+      display: flex;
+      gap: 10px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
 }
 
 .hero {
@@ -371,7 +470,7 @@
     margin-left: -60px;
   }
   .marquee-txt {
-    font-family: 'qualy', Verdana;
+    font-family: "qualy", Verdana;
     font-size: 14px;
     display: flex;
     height: 100%;
@@ -384,67 +483,6 @@
       color: #fff;
       font-weight: 400;
       font-family: "madeTommy", Verdana;
-    }
-  }
-}
-
-.mobile-nav {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: #212122;
-  z-index: 2;
-  color: #fff;
-  padding: 0 50px 44px 50px;
-  font-family: "madeTmmy", Verdana;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 44px;
-
-  .mob-links {
-    padding-top: 130px;
-    > ul {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      > li {
-        list-style: none;
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        cursor: pointer;
-        padding-top: 10px;
-      }
-    }
-  }
-  .mob-socials {
-    > ul {
-      display: flex;
-      gap: 20px;
-
-      > li {
-        list-style: none;
-        font-size: 20px;
-        padding-top: 30px;
-        cursor: pointer;
-      }
-    }
-  }
-  .mob-login {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding-bottom: 30px;
-    font-size: 40px;
-
-    .login {
-      display: flex;
-      gap: 10px;
-      font-size: 18px;
-      cursor: pointer;
     }
   }
 }
@@ -509,8 +547,7 @@
   .slider-txt2 {
     padding-right: 20px;
   }
-  .mobile-nav{
+  .mobile-nav {
     padding: 0 15px 44px 15px;
-
   }
 }
